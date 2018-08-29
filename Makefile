@@ -142,18 +142,18 @@ build-xqueue:
 	docker build -t regis/openedx-xqueue:latest -t regis/openedx-xqueue:hawthorn xqueue/
 
 #################### Deploying to docker hub
-push: push-openedx push-forum push-xqueue
-push-openedx:
-	docker push regis/openedx:hawthorn
-	docker push regis/openedx:latest
-push-configurator:
-	docker push regis/openedx-configurator:hawthorn
-	docker push regis/openedx-configurator:latest
-push-forum:
-	docker push regis/openedx-forum:hawthorn
-	docker push regis/openedx-forum:latest
-push-xqueue:
-	docker push regis/openedx-xqueue:hawthorn
-	docker push regis/openedx-xqueue:latest
+#push: push-openedx push-forum push-xqueue
+#push-openedx:
+#	docker push regis/openedx:hawthorn
+#	docker push regis/openedx:latest
+#push-configurator:
+#	docker push regis/openedx-configurator:hawthorn
+#	docker push regis/openedx-configurator:latest
+#push-forum:
+#	docker push regis/openedx-forum:hawthorn
+#	docker push regis/openedx-forum:latest
+#push-xqueue:
+#	docker push regis/openedx-xqueue:hawthorn
+#	docker push regis/openedx-xqueue:latest
 
-dockerhub: build push
+#dockerhub: build push
